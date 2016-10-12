@@ -1,0 +1,129 @@
+stats_url : "http://lbadmin:lbadmin@localhost:81/admin?stats;csv"
+
+program_id : gateway_haproxy
+metrics :
+  gateway:
+    FRONTEND:
+      columns:
+        hrsp_1xx:
+        hrsp_2xx:
+        hrsp_3xx:
+        hrsp_4xx:
+        hrsp_5xx:
+        hrsp_other:
+        scur:
+          type: gauge
+        smax:
+          type: gauge
+        stot:
+        bin:
+        bout:
+        ereq:
+        req_tot:
+        req_rate_max:
+           type: gauge
+        comp_in:
+        comp_out:
+        comp_byp:
+        comp_rsp:
+
+  gateway_ssl:
+    FRONTEND:
+      columns:
+        hrsp_1xx:
+        hrsp_2xx:
+        hrsp_3xx:
+        hrsp_4xx:
+        hrsp_5xx:
+        hrsp_other:
+        scur:
+          type: gauge
+        smax:
+          type: gauge
+        stot:
+        bin:
+        bout:
+        ereq:
+        req_tot:
+        req_rate_max:
+           type: gauge
+        comp_in:
+        comp_out:
+        comp_byp:
+        comp_rsp:
+
+  gateway_httpclose:
+    BACKEND:
+      columns:
+        hrsp_1xx:
+        hrsp_2xx:
+        hrsp_3xx:
+        hrsp_4xx:
+        hrsp_5xx:
+        hrsp_other:
+        qtime:
+          type: gauge
+        ctime:
+          type: gauge
+        rtime:
+          type: gauge
+        ttime:
+          type: gauge
+        scur:
+          type: gauge
+        smax:
+          type: gauge
+        stot:
+        bin:
+        bout:
+        econ:
+        eresp:
+        wretr:
+        wredis:
+
+  gateway_keepalive:
+    BACKEND:
+      columns:
+        hrsp_1xx:
+        hrsp_2xx:
+        hrsp_3xx:
+        hrsp_4xx:
+        hrsp_5xx:
+        hrsp_other:
+        qtime:
+          type: gauge
+        ctime:
+          type: gauge
+        rtime:
+          type: gauge
+        ttime:
+          type: gauge
+        scur:
+          type: gauge
+        smax:
+          type: gauge
+        stot:
+        bin:
+        bout:
+        econ:
+        eresp:
+        wretr:
+        wredis:
+
+#  server-remote:
+#    BACKEND:
+#      columns:
+#        scur:
+#          type: gauge
+#        connms:
+#          type: gauge
+#        rate:
+#          type: gauge
+#        rate_max:
+#          type: gauge
+#        bin:
+#        bout:
+#        hrsp_1xx:
+#        check_code:
+#        check_status:
+#        check_duration:

@@ -1,0 +1,1 @@
+* * * * * root /root/haproxy-to-mondemand-proxy --config_file /root/haproxy-to-mondemand.yaml

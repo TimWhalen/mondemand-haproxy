@@ -1,0 +1,6 @@
+
+Generic and configurable script to create mondemand metrics from haproxy statistics
+Not very usable unless you already understand mondemand, but if you want to
+run this you need mondemand-tool and this installed.
+
+See http://www.haproxy.org/download/1.6/doc/management.txt for a list of haproxy 1.6 statistics.
